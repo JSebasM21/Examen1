@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jhon Sebastian Moreno Mendoza</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: lightslategray;
+        }
+        
+        .marco-container {
+            display: flex;
+            height: 100vh;
+        }
+        
+        .marco {
+            width: 50%;
+            height: auto;
+            overflow-y: auto;
+            border: 4px solid #000102;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            
+        }
+        
+        #marco1 {
+            background-color: #fdf9f9;
+        }
+        
+        #marco2 {
+            background-color: #e0e0e0;
+        }
+        
+        #marco3 {
+            background-color: #d2d2d2;
+        }
+        
+        h2 {
+            margin-top: 0;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        label {
+            margin-bottom: 5px;
+        }
+        
+        input, button {
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        .border1{
+            width: 5%;
+            height: auto;
+            overflow-y: auto;
+            border: 4px solid #000102;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div id="marco1" class="marco">
+        <h2>Formulario de Registro</h2>
+        <form>
+            <label for="Rut">Rut:</label>
+            <input type="text" id="Rut" name="Rut" required><br><br>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+            <label for="nombre">Apellido Materno:</label>
+            <input type="text" id="Materno" name="materno" required><br><br>
+            <label for="nombre">Apellido Paterno:</label>
+            <input type="text" id="Paterno" name="Paterno" required><br><br>
+            <label for="genero">Género:</label><br>
+            <input type="radio" id="masculino" name="genero" value="masculino">
+            <label for="masculino">Masculino</label><br>
+            <input type="radio" id="femenino" name="genero" value="femenino">
+            <label for="nivel_estudio">Nivel de estudio:</label><br>
+         <select name="nivel_estudio" id="nivel_estudio">
+            <option value="seleccionar">Seleccionar</option>
+            <option value="Primaria">Primaria</option>
+            <option value="Secundaria">Secundaria</option>
+            <option value="Preparatoria">Preparatoria</option>
+            <option value="Universidad">Universidad</option>
+      
+         </select><br><br>
+         <label for="Ciudad">Ciudad de nacimiento:</label><br>
+         <select name="ciudad" id="ciudad">
+            <option value="seleccionar">Seleccionar</option>
+            <option value="Santa Cruz">Santa Cruz</option>
+            <option value="Pando">Pando</option>
+            <option value="Cochabamba">Cochabamba</option>
+            <option value="Tarija">Tarija</option>
+            <option value="Sucre">Sucre</option>
+            
+         </select><br><br>
+         <label for="curriculum">Currículum:</label><br>
+         <input type="file" id="curriculum" name="curriculum" accept=".pdf, .doc, .docx"><br><br>
+        
+         <label for="Foto">Foto:</label><br>
+         <input type="file" id="foto" name="foto" accept=" .png, .jpg, .pdf, .doc, .docx"><br><br>
+          
+         
+            <button type="submit">Registrarse</button>
+            
+        </form>
+        
+    </div>
+    <div id="marco2" class="marco">
+        <h2>Página Interna</h2> <br>
+
+        <a href=" https://jsebasm21.github.io/Examen2/" class="border1">Pagina Interna</a> <br>
+        <br>
+        
+    </div>
+    <div id="marco3" class="marco">
+        <h2>Página Externa</h2><br>
+
+        <a href="https://www.youtube.com/" target="_blank" class="border1">Ir a página externa</a> <br>
+         <br>
+    </div></center>
+</body>
+</html>
